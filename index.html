@@ -44,7 +44,20 @@
                 <p class="artigo-autor">Por: Evellyn</p>
                 <p>Boas-vindas ao meu novo blog! Aqui vou compartilhas dicas de programação e curiosidades da area de tecnologia.</p>
                 <button>❤️ <span>0</span></button>
+                <button>👍 <span>0</span></button>
             </div>
+
         </main>
      </body>
+     <script>
+        const botao = document.querySelectorALL("button");
+        botao.addEventLister("click", botaoClicado);
+
+        fuction botaoClicado(){
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+
+      </script>
 </html>
